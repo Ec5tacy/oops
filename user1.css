@@ -4,13 +4,20 @@
     padding: 0;
   }
   
-  body {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    background: #ededed;
-  
-
+  img {
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
   }
   
+  body {
+    background-image: url("userbg3_edited.jpg");  
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  .background-image{
+    filter: blur(10px);
+   height: 100%;
+  }
   input, button {
     border: none;
     outline: none;
@@ -25,12 +32,14 @@
   }
   
   .cont {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    
     overflow: hidden;
     position: relative;
     width: 900px;
     height: 550px;
-    margin: 0 auto 100px;
-    background: #fff;
+    margin: 0px 5px 10px;
+    background: transparent;
   }
   
   .form {
@@ -39,18 +48,6 @@
     height: 100%;
     transition: transform 1.2s ease-in-out;
     padding: 50px 30px 0;
-  }
-  
-  .sub-cont {
-    overflow: hidden;
-    position: absolute;
-    left: 640px;
-    top: 0;
-    width: 900px;
-    height: 100%;
-    padding-left: 260px;
-    background: #fff;
-    transition: transform 1.2s ease-in-out;
   }
   .cont.s--signup .sub-cont {
     transform: translate3d(-640px, 0, 0);
@@ -176,19 +173,26 @@
   
   h2 {
     width: 100%;
-    font-size: 26px;
+    font-weight: 1000;
+    font-size: 50px;
+    font-style: inherit;
     text-align: center;
-    color: #130a26;
+    background-color:transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #490101bd;
   }
   
   h3 {
     width: 100%;
     font-size: 26px;
+    background-color:transparent; 
     text-align: center;
-    color: #130a26;
+    
+    color: #4e2e318e;
   }
   
   label {
+    color: aqua;
     display: block;
     width: 260px;
     margin: 25px auto 0;
@@ -196,7 +200,7 @@
   }
   label span {
     font-size: 12px;
-    color: #cfcfcf;
+    color: #0e01c0;
     text-transform: uppercase;
   }
   
@@ -206,7 +210,7 @@
     margin-top: 5px;
     padding-bottom: 5px;
     font-size: 16px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgb(180, 0, 0);
     text-align: center;
   }
   
@@ -220,7 +224,7 @@
   .submit {
     margin-top: 40px;
     margin-bottom: 20px;
-    background: teal;
+    background: rgb(0, 38, 163);
   }
   
   .fb-btn {
